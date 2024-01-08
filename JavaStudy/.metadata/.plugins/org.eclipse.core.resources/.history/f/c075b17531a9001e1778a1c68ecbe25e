@@ -1,0 +1,55 @@
+package switch문;
+
+import java.util.Scanner;
+
+public class JavaFestival_03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("총 금액 입력 : ");
+		int money = sc.nextInt();
+
+		System.out.print("잔돈 : " + money);
+		int money2 = 0;
+		int a10000 = 0;
+		int a5000 = 0;
+		int a1000 = 0;
+		int a500 = 0;
+		int a100 = 0;
+
+		if (money / 10000 > 1) {
+			for (int i = 0; i <= money / 10000; i++)
+				a10000++;
+			money2 = money - a10000 * 10000;
+
+			if (money2 / 5000 > 1) {
+				for (int i = 0; i <= money2 / 5000; i++)
+					a5000++;
+				money2 = money2 - a5000 * 5000;
+				if (money2 / 1000 > 1) {
+					for (int i = 0; i <= money2 / 1000; i++)
+						a1000++;
+					money2 = money2 - a1000 * 1000;
+					if (money2 / 500 > 1) {
+						for (int i = 0; i <= money2 / 500; i++)
+							a500++;
+						money2 = money2 - a500 * 500;
+						if (money2 / 100 > 1) {
+							for (int i = 0; i <= money2 / 100; i++)
+								a100++;
+							money2 = money2 - a100 * 100;
+
+						}
+					}
+				}
+
+			}
+
+		}
+		System.out.println(a10000);
+		System.out.println(a5000);
+		System.out.println(a1000);
+		System.out.println(a500);
+		System.out.println(a100);
+	}
+}

@@ -1,0 +1,17 @@
+package switch문;
+
+import java.util.Scanner;
+
+public class Ex02_자판기프로그램{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("금액을 입력하세요 : ");
+		int money = sc.nextInt();
+		
+		System.out.print("메뉴를 고르세요. ");
+		
+	}
+	
+	
+}

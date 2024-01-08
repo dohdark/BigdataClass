@@ -1,0 +1,40 @@
+package javaFestival;
+
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		int sum = 1;
+		int count=1;
+		int result = 0;
+		// 25462581
+		
+		for(int i = 1 ; i <= 10000000 ; i*=10) {
+			// 1 10 100 1000 10000
+			// 1 10 100 1000 10000
+			sum = num%i;
+			System.out.println(num%i);
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		System.out.println("합은 : "+result);
+		
+		
+		
+		
+		
+		
+	}
+
+}

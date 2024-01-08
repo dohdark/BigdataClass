@@ -1,0 +1,23 @@
+package javaFestival;
+
+public class javaFestival_03일_01문제 {
+
+	public static void main(String[] args) {
+		int plus = 0;
+		plus++;
+		int minus = 0;
+		int sum = 0;
+		
+		for(int i = plus; i >= 100 ; i++) {
+			if(i%2==0) {
+				sum+=i;
+			}else {
+				sum+=i;
+			}System.out.println("결과 : "+sum);
+			
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package Lv_0;
+
+import java.util.Scanner;
+
+public class 문자열_겹쳐쓰기 {
+
+	public static void main(String[] args) {
+		// 문자열 my_string,over_string과 인덱스 정수s가 주어집니다.
+		// 문자열 my_string의 s부터 over_string로 초기화하여 출력.
+//		Scanner sc = new Scanner(System.in);
+//		String t = sc.next();
+		String my_string = "He11oWor1d";
+		String over_string = "lloWorl";
+		int s=2;
+		String answer="";
+		
+		for(int i=0; i<my_string.length(); i++) {
+
+			if(i>=s) {
+				answer += over_string.charAt(i)
+			}
+			
+			answer += my_string.charAt(i);
+		}
+		
+		
+		System.out.println(answer);
+		
+		
+		
+		
+	}
+
+}
