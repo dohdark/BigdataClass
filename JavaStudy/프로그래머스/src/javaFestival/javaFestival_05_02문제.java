@@ -1,0 +1,22 @@
+package javaFestival;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class javaFestival_05_02문제 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[10];
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(i + 1 + "번째 정수 입력 >> ");
+			arr[i] = sc.nextInt();
+		}
+		System.out.print("3의 배수 : ");
+		for (int j : arr) {
+			if (j % 3 == 0 && j != 0) {
+				System.out.print(j + " ");
+			}
+		}
+	}
+}

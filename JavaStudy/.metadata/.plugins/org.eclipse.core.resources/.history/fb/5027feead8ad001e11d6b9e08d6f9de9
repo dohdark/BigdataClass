@@ -1,0 +1,28 @@
+package 배열;
+
+import java.util.Random;
+
+public class Ex04배열예제_가장큰수찾기 {
+
+	public static void main(String[] args) {
+		Random rd = new Random();
+		int[] rannum = new int[5];
+		int max = 0;
+		int min = 0;
+		System.out.print("배열 안에 들어있는 값 : ");
+		for (int i = 0; i <= rannum.length - 1; i++) {
+			int random = rd.nextInt(10) + 1;
+			rannum[i] = random;
+			System.out.print(rannum[i] + " ");
+		}
+		for (int j = 0; j < rannum.length; j++) {
+			if(rannum[j] > max) {
+				max = rannum[j];
+			}
+			if(rannum[j] < min) {
+				min = rannum[j];
+			}
+		}
+		System.out.println("가장큰수 : "+ max);
+	}
+}

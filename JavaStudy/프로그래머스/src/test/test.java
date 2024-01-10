@@ -1,0 +1,24 @@
+package test;
+
+import java.util.Random;
+
+public class test {
+
+	public static void main(String[] args) {
+		Random rd = new Random();
+		int[] rannum = new int[5];
+		int[] rannum2 = new int[5];
+
+		for (int i = 0; i <= rannum.length - 1; i++) {
+			int random = rd.nextInt(100) + 1;
+			rannum[i] = random;
+			System.out.print(rannum[i]+" ");
+		}
+		System.out.println();
+		for(int j : rannum2) {
+			System.out.print(j+" ");
+		}
+		
+		
+	}
+}

@@ -1,0 +1,22 @@
+package 배열;
+
+import java.util.Random;
+
+public class Ex03홀수찾기 {
+
+	public static void main(String[] args) {
+		Random rd = new Random(100);
+//		int random = rd.nextInt(100)+1;
+		int[] rannum = new int[100];
+		for (int i = 0; i <= 99 ; i++) {
+			int random = rd.nextInt(100)+1;
+			rannum[i] = random;
+			System.out.println(rannum[i]);
+		}
+		
+		
+		
+
+	}
+
+}

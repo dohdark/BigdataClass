@@ -14,6 +14,8 @@ public class Ex02배열기초 {
 			numbers[i]=i*5;
 			System.out.println(numbers[i]);
 		}
+		String[] names = {"김동현","가동현","나동현"};
+		System.out.println(names[1]);
 		
 	}
 
