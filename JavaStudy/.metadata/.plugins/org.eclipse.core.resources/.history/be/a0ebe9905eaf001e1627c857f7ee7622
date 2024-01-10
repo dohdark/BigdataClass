@@ -1,0 +1,10 @@
+package 이차원배열;
+
+public class 이차원배열예제_스네이크모양 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
