@@ -28,7 +28,9 @@ public class javaFestival_05일_03문제 {
 //				}
 //			}
 //		}
-
+		for (int i = 0; i < lotto.length; i++) {
+			System.out.println("행운 :"+lotto[i]);
+		}
 		System.out.print(Arrays.toString(lotto));
 
 	}
